@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title
+      = content_for(:title) || 'Tiny Blog'
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+            span.sr-only
+              | Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to 'Tiny Blog', root_url, class: 'navbar-brand'
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li= link_to 'Home', root_path
+            - if user_signed_in?
+              li
+                = link_to 'Create post', new_blog_post_path(current_user.blog)
+              li
+                = link_to 'Edit user profile', edit_user_registration_path
+              li
+                = link_to 'Logout', destroy_user_session_path, method: :delete
+            - else
+              li
+                = link_to 'Sign up as User', new_user_registration_path
+              li
+                = link_to 'Sign in as User', new_user_session_path
+    .container
+      - flash.each do |name, msg|
+        = content_tag :div, class: "alert alert-#{ name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do
+          button.close(type="button" data-dismiss="alert")
+            span(aria-hidden="true")
+              | ×
+            span.sr-only
+              | Close
+          = msg
+      = yield

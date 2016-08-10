@@ -1,12 +1,12 @@
 {
   "name": "Tiny Blog",
   "description": "Rails 4 multi blog site",
-  "website": "http://cmcknight.io",
+  "website": "https://cmcknight.io",
   "repository": "https://github.com/cmckni3/tiny-blog",
   "success_url": "/",
   "keywords": [
     "ruby on rails"
   ],
-  "scripts": { "postdeploy": "RAILS_ENV=production rake db:migrate" },
+  "scripts": { "postdeploy": "RAILS_ENV=production bundle exec rake db:migrate" },
   "generator": "https://www.expeditedssl.com/heroku-button-maker"
 }

@@ -7,6 +7,8 @@ class PostsController < ApplicationController
   before_action :set_blog, except: [:show]
 
   def show
+    @blog = @post.blog
+
     respond_to do |format|
       format.html
       format.json { render json: @post }

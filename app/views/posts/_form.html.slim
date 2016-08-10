@@ -16,6 +16,8 @@
     = f.text_field :title, class: 'form-control'
   .form-group
     = f.label :content
-    = f.text_area :content, class: 'form-control'
-    p.help-block Supports markdown
+    = f.text_area :content, class: 'form-control', rows: '10'
+    p.help-block
+      |Enter content in&nbsp;
+      = link_to 'markdown', 'https://daringfireball.net/projects/markdown/syntax'
   = f.submit 'Submit', class: 'btn btn-primary'
