@@ -46,9 +46,8 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
-    bcrypt (3.1.7)
+    bcrypt (3.1.11)
     builder (3.2.2)
-    byebug (9.0.5)
     capybara (2.7.1)
       addressable
       mime-types (>= 1.16)
@@ -60,16 +59,20 @@ GEM
     concurrent-ruby (1.0.2)
     daemons (1.2.3)
     debug_inspector (0.0.2)
-    devise (3.5.10)
+    devise (4.2.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
+      railties (>= 4.1.0, < 5.1)
       responders
-      thread_safe (~> 0.1)
       warden (~> 1.2.3)
     dotenv (2.0.0)
     dotenv-rails (2.0.0)
       dotenv (= 2.0.0)
+    draper (2.1.0)
+      actionpack (>= 3.0)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      request_store (~> 1.0)
     erubis (2.7.0)
     eventmachine (1.2.0.1)
     execjs (2.7.0)
@@ -98,9 +101,6 @@ GEM
       guard (~> 2.0)
       rubocop (~> 0.20)
     i18n (0.7.0)
-    jbuilder (2.6.0)
-      activesupport (>= 3.0.0, < 5.1)
-      multi_json (~> 1.2)
     jquery-rails (4.1.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -137,7 +137,6 @@ GEM
       minitest-capybara (~> 0.8)
       minitest-metadata (~> 0.6)
       minitest-rails (~> 2.1)
-    multi_json (1.12.1)
     mysql2 (0.4.4)
     nenv (0.3.0)
     nokogiri (1.6.8)
@@ -173,6 +172,8 @@ GEM
       sprockets-rails
     rails-assets-bootstrap (3.3.6)
       rails-assets-jquery (>= 1.9.1, < 3)
+    rails-assets-bootswatch (3.3.6.2)
+      rails-assets-bootstrap (~> 3.3.6)
     rails-assets-jquery (2.2.0)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
@@ -199,7 +200,9 @@ GEM
       ffi (>= 0.5.0)
     rdoc (4.2.2)
       json (~> 1.4)
-    responders (2.1.1)
+    redcarpet (3.3.4)
+    request_store (1.2.1)
+    responders (2.2.0)
       railties (>= 4.2.0, < 5.1)
     rubocop (0.40.0)
       parser (>= 2.3.1.0, < 3.0)
@@ -220,6 +223,13 @@ GEM
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
     shellany (0.0.1)
+    slim (3.0.7)
+      temple (~> 0.7.6)
+      tilt (>= 1.3.3, < 2.1)
+    slim-rails (3.1.0)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
+      slim (~> 3.0)
     slop (3.6.0)
     spring (1.7.2)
     sprockets (3.7.0)
@@ -233,6 +243,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    temple (0.7.7)
     thin (1.7.0)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -259,27 +270,31 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
-  byebug
   devise
   dotenv-rails
+  draper
   faker
   font-awesome-sass (~> 4.4)
   guard
   guard-minitest
   guard-rubocop
-  jbuilder (~> 2.0)
   jquery-rails
   minitest-focus
   minitest-rails
   minitest-rails-capybara
   mysql2
+  pry
   quiet_assets
   rails (~> 4.2.1)
   rails-assets-bootstrap (~> 3.2)!
+  rails-assets-bootswatch (~> 3.3)!
   rails_12factor
+  redcarpet (~> 3.3.3)
   responders (~> 2.0)
+  rubocop
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  slim-rails
   spring
   sprockets (>= 3.0.0)
   sprockets-es6

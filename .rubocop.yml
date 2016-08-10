@@ -1,0 +1,19 @@
+# This is the configuration used to check the rubocop source code.
+
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'Guardfile'
+    - '**/*.rake'
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+  TargetRubyVersion: 2.2
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+

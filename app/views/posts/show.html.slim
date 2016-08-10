@@ -1,0 +1,11 @@
+h1= @post.title
+
+p
+  |Created on:&nbsp;
+  = @post.created_at_in_user_timezone
+- if @post.modified?
+  p
+    |Last Updated:&nbsp;
+    = @post.updated_at_in_user_timezone
+
+= @post.content_html

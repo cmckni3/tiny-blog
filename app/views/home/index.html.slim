@@ -1,0 +1,9 @@
+h2 Tiny Blog
+
+h3 Check out blogs below
+
+- @blogs.each do |blog|
+  h3= link_to blog.title, blog_path(blog)
+
+- if @blogs.empty?
+  h3 No blogs found

@@ -9,6 +9,7 @@ gem 'mysql2'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'slim-rails'
 gem 'sprockets', '>= 3.0.0'
 gem 'sprockets-es6'
 
@@ -17,6 +18,7 @@ gem 'quiet_assets'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap', '~> 3.2'
+  gem 'rails-assets-bootswatch', '~> 3.3'
 end
 gem 'font-awesome-sass', '~> 4.4'
 
@@ -25,12 +27,16 @@ gem 'responders', '~> 2.0'
 
 gem 'devise'
 
-gem 'jbuilder', '~> 2.0'
+gem 'draper'
+
+gem 'redcarpet',     '~> 3.3.3'
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
-  gem 'byebug'
+  gem 'pry'
   gem 'web-console', '~> 3.0'
+  gem 'rubocop'
 end
 
 group :development, :test do

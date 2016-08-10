@@ -1,0 +1,21 @@
+= form_for([@blog, @post]) do |f|
+  - if @post.errors.any?
+    .panel.panel-danger
+      .panel-heading
+        = pluralize(@post.errors.count, "error")
+        |&nbsp;
+        |prohibited this post from being saved
+
+      .panel-body
+        ul
+          - @post.errors.full_messages.each do |message|
+            li= message
+
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: 'form-control'
+  .form-group
+    = f.label :content
+    = f.text_area :content, class: 'form-control'
+    p.help-block Supports markdown
+  = f.submit 'Submit', class: 'btn btn-primary'
