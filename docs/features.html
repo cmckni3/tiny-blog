@@ -1,0 +1,104 @@
+<h2>Requirements</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature(s)</th>
+      <th>Description</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Setup Rails application</td>
+      <td>
+        Created Rails application with my usual minitest-rails and bootstrap setup
+      </td>
+      <td><strong>0.5h</strong></td>
+    </tr>
+    <tr>
+      <td>Create models for Blog, User, and Post including migrations</td>
+      <td>Generated models, migrations, and setup all relationships</td>
+      <td><strong>0.5h</strong></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>As a Visitor I want to see a blog site home page with an index of the blogs on the site</li>
+          <li>As a Visitor I want to see a user’s blog home page with a list of the blog’s posts</li>
+        </ul>
+      </td>
+      <td>Created view, controller, and use Blog/Post model</td>
+      <td><strong>0.5</strong></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Setup Devise for user model and create blog upon signup</li>
+          <li>As a Visitor I want to create an account to become a user with a blog</li>
+          <li>As a User I want to personalize my blog by specifying a title for the blog</li>
+          <li>As a User I want to specify the URL name for my specific blog, like http://myblogdemo.com/ is the root, I specify “frankie” as my blog slug, so my blog is at http://myblogdemo.com/blogs/fankie</li>
+        </ul>
+      </td>
+      <td></td>
+      <td><strong>1h</strong></td>
+    </tr>
+    <tr>
+      <td>As a User I want to add a new blog post with a title, and content in markdown</td>
+      <td>Created decorator for markdown content to use redcarpet for rendering</td>
+      <td><strong>0.5h</strong></td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>As a Visitor I want to be able to click the title of a blog post on the blog home page, to get to a page view of just that one post with a unique URL, like http://myblogdemo.com/blogs/fankie/posts/321</li>
+          <li>As a User I want to see a list of my blog posts and CRUD</li>
+        </ul>
+      </td>
+      <td>
+        Setup frontend forms, use Bootstrap, display Edit/Delete buttons based on user.
+        Most of the time involved fixing generated URL helpers with the correct
+        nested resource path helpers.
+      </td>
+      <td><strong>2.75h</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Bonus</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature(s)</th>
+      <th>Description</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Devise authorization</td>
+      <td>Used Devise for users to create accounts with an email and password</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Boostrap CSS Framework</td>
+      <td>Installed Bootstrap and Bootswatch Paper via rails-assets.org</td>
+      <td><strong>0.25h</strong></td>
+    </tr>
+    <tr>
+      <td>Slim templating</td>
+      <td>Setup was easy but converting templates took a little time</td>
+      <td><strong>0.25h</strong></td>
+    </tr>
+    <tr>
+      <td>
+        Users can select a timezone when creating an account. The timezone
+        can also be changed in the user profile. Post created at and updated at
+        are displayed in the user's timezone.
+      </td>
+      <td></td>
+      <td>0.5h</td>
+    </tr>
+  </tbody>
+</table>

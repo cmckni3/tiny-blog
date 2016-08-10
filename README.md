@@ -30,15 +30,31 @@ Multi Blog Site built on Rails 4
   bin/setup
   ```
 
-* Install `bundler` dependencies
-  ```bash
-  bundle install
-  ```
+### Optional steps
+
+#### Database notes
+
+The `bin/setup` script handles most of the setup but it may fail due to
+invalid database configuration. After changing the database configuration
+the following command can be run:
 
 * Setup database, run migrations, and run seeds
   ```bash
   rake db:create db:migrate db:seed
   ```
+
+Alternatively, `bin/setup` can be run again.
+
+#### Ruby dependencies
+
+The following command can be used to install new Ruby dependencies:
+
+* Install `bundler` dependencies
+  ```bash
+  bundle install
+  ```
+
+Alternatively, `bin/setup` can be run to install `bundler` dependencies.
 
 ## Run the application
 
@@ -56,3 +72,9 @@ Multi Blog Site built on Rails 4
   ```bash
   rake test
   ```
+
+## TODO
+
+Write tests
+
+Test models, helpers and some integration tests
