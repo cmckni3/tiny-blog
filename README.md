@@ -7,14 +7,14 @@ Multi Blog Site
 ## Requirements
 
 * Ruby 2+
-* MySQL 5.6
+* Postgresql 9.4+
 * Nodejs 0.10+
 
 ## Setup
 
 * Install Ruby
 
-* Install MySQL
+* Install Postgresql
 
 * Install node.js
 
