@@ -2,7 +2,7 @@
   "name": "Tiny Blog",
   "description": "Rails 4 multi blog site",
   "repository": "https://github.com/cmckni3/tiny-blog",
-  "addons": ["cleardb:ignite"],
+  "addons": ["jawsdb:kitefin"],
   "success_url": "/",
   "keywords": [
     "ruby on rails"
