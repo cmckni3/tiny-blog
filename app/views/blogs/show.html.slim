@@ -9,10 +9,11 @@ h3
       = link_to post.title, blog_post_path(@blog, post)
     .col-md-4
       = post.created_at_in_user_timezone
-    .col-md-4
-      ul.list-inline
-        li= link_to 'Edit', edit_blog_post_path(@blog, post)
-        li= link_to 'Delete', blog_post_path(@blog, post), data: { confirm: 'Are you sure?' }, method: :delete
+    - if post_belongs_to_user post
+      .col-md-4
+        ul.list-inline
+          li= link_to 'Edit', edit_blog_post_path(@blog, post), class: 'btn btn-default btn-sm'
+          li= link_to 'Delete', blog_post_path(@blog, post), data: { confirm: 'Are you sure?' }, method: :delete, class: 'btn btn-danger btn-sm'
 
 - if @blog.posts.empty?
   p No posts

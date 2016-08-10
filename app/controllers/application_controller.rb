@@ -3,13 +3,13 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  rescue_from TinyBlog::AccessDenied do |exception|
-    exception.default_message = 'You are not authorized to view that page.'
+  rescue_from TinyBlog::AccessDenied do |_|
+    message = 'You are not authorized to view that page.'
     respond_to do |format|
       format.json do
-        render json: { error: exception.message, status: :forbidden }
+        render json: { error: message, status: :forbidden }
       end
-      format.all { redirect_to root_url, alert: exception.message }
+      format.all { redirect_to root_path, alert: message }
     end
   end
 end

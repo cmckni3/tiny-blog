@@ -2,9 +2,9 @@ class PostsController < ApplicationController
   include PostsHelper
 
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :set_blog, except: [:show]
   before_action :authenticate_user!, except: [:show]
   before_action :current_user_can_modify_post, except: [:new, :create, :show]
+  before_action :set_blog, except: [:show]
 
   def show
     respond_to do |format|
