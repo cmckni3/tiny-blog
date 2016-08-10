@@ -2,7 +2,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/cmckni3/tiny-blog)
 
-Multi Blog Site
+Multi Blog Site built on Rails 4
 
 ## Requirements
 
