@@ -18,6 +18,11 @@ Multi Blog Site
 
 * Install node.js
 
+* Copy `config/database.yml.sample`
+  ```bash
+  cp config/database.yml.sample database.yml
+  ```
+
 * Edit `config/database.yml`
 
 * Run setup script
