@@ -13,7 +13,7 @@ class BlogsController < ApplicationController
   private
 
   def set_blog
-    @blog = Blog.find_by_slug(params[:id]).decorate
+    @blog = Blog.find_by(slug: params[:id]).decorate
   end
 
   def blog_params
