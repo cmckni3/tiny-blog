@@ -41,9 +41,9 @@ end
 
 group :development, :test do
   gem 'faker'
-  gem 'guard'
-  gem 'guard-minitest'
-  gem 'guard-rubocop'
+  gem 'guard', '~> 2.14.0'
+  gem 'guard-minitest', '~> 2.4.5'
+  gem 'guard-rubocop', '~> 1.2.0'
   gem 'spring'
   gem 'thin'
 end
