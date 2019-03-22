@@ -25,7 +25,7 @@ gem 'font-awesome-sass', '~> 4.4'
 gem 'active_model_serializers'
 gem 'responders', '~> 2.0'
 
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 
 gem 'draper'
 
