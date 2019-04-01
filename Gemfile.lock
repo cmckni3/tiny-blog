@@ -59,7 +59,7 @@ GEM
     crass (1.0.4)
     daemons (1.2.6)
     debug_inspector (0.0.2)
-    devise (4.6.1)
+    devise (4.6.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 6.0)
@@ -142,7 +142,7 @@ GEM
       minitest-metadata (~> 0.6)
       minitest-rails (~> 2.1)
     nenv (0.3.0)
-    nokogiri (1.10.1)
+    nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
@@ -274,7 +274,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
-  devise (>= 4.6.0)
+  devise (>= 4.6.1)
   dotenv-rails
   draper
   faker
@@ -294,7 +294,7 @@ DEPENDENCIES
   rails-assets-bootswatch (~> 3.3)!
   rails_12factor
   redcarpet (~> 3.3.3)
-  responders (~> 2.0)
+  responders (~> 2.4, >= 2.4.1)
   rubocop
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
