@@ -274,7 +274,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
-  devise (>= 4.6.0)
+  devise (~> 4.6)
   dotenv-rails
   draper
   faker
