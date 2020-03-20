@@ -4,7 +4,7 @@ ruby '~> 2.4.6'
 # Application configuration
 gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
 
-gem 'rails', '~> 4.2.11', '>= 4.2.11.1'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 
 gem 'pg'
 
@@ -32,7 +32,7 @@ gem 'draper', '>= 2.1.0'
 
 gem 'redcarpet',     '~> 3.3.3'
 
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 1.0.0', group: :doc
 
 group :development do
   gem 'pry'
@@ -51,8 +51,8 @@ end
 
 group :test do
   gem 'minitest-focus'
-  gem 'minitest-rails', '>= 2.2.1'
-  gem 'minitest-rails-capybara', '>= 2.1.2'
+  gem 'minitest-rails', '>= 3.0.0'
+  gem 'minitest-rails-capybara', '>= 3.0.0'
 end
 
 group :production do
