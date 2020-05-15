@@ -4,14 +4,14 @@ ruby '~> 2.4.6'
 # Application configuration
 gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
 
-gem 'rails', '~> 4.2.11', '>= 4.2.11.1'
+gem 'rails', '~> 5.0.0'
 
 gem 'pg'
 
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'slim-rails', '>= 3.2.0'
 gem 'sprockets', '>= 3.7.2'
-gem 'sprockets-es6', '>= 0.9.1'
+gem 'sprockets-es6', '>= 0.9.2'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails', '>= 4.3.5'
@@ -51,8 +51,8 @@ end
 
 group :test do
   gem 'minitest-focus'
-  gem 'minitest-rails', '>= 2.2.1'
-  gem 'minitest-rails-capybara', '>= 2.1.2'
+  gem 'minitest-rails', '>= 3.0.0'
+  gem 'minitest-rails-capybara', '>= 3.0.0'
 end
 
 group :production do
