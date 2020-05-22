@@ -32,7 +32,7 @@ gem 'draper', '>= 2.1.0'
 
 gem 'redcarpet',     '~> 3.3.3'
 
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 1.0.0', group: :doc
 
 group :development do
   gem 'pry'
