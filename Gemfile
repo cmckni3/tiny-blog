@@ -4,7 +4,7 @@ ruby '~> 2.4.6'
 # Application configuration
 gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
 
-gem 'rails', '~> 4.2.11', '>= 4.2.11.1'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 
 gem 'pg'
 
@@ -23,7 +23,7 @@ source 'https://rails-assets.org' do
 end
 gem 'font-awesome-sass', '~> 4.4'
 
-gem 'active_model_serializers'
+gem 'active_model_serializers', '>= 0.9.4'
 gem 'responders', '~> 2.4', '>= 2.4.1'
 
 gem 'devise', '~> 4.7', '>= 4.7.1'
@@ -51,8 +51,8 @@ end
 
 group :test do
   gem 'minitest-focus'
-  gem 'minitest-rails', '>= 2.2.1'
-  gem 'minitest-rails-capybara', '>= 2.1.2'
+  gem 'minitest-rails', '>= 3.0.0'
+  gem 'minitest-rails-capybara', '>= 3.0.0'
 end
 
 group :production do
