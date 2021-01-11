@@ -30,7 +30,7 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 
 gem 'draper', '>= 2.1.0'
 
-gem 'redcarpet',     '~> 3.3.3'
+gem 'redcarpet',     '~> 3.5.1'
 
 gem 'sdoc', '~> 1.0.0', group: :doc
 
