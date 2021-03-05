@@ -4,11 +4,11 @@ ruby '~> 2.4.6'
 # Application configuration
 gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
 
-gem 'rails', '~> 4.2.11', '>= 4.2.11.1'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 
 gem 'pg'
 
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
 gem 'slim-rails', '>= 3.2.0'
 gem 'sprockets', '>= 3.7.2'
 gem 'sprockets-es6', '>= 0.9.1'
@@ -24,7 +24,7 @@ end
 gem 'font-awesome-sass', '~> 4.4'
 
 gem 'active_model_serializers'
-gem 'responders', '~> 2.4', '>= 2.4.1'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 
 gem 'devise', '~> 4.7', '>= 4.7.1'
 
@@ -51,7 +51,7 @@ end
 
 group :test do
   gem 'minitest-focus'
-  gem 'minitest-rails', '>= 2.2.1'
+  gem 'minitest-rails', '>= 6.0.0'
   gem 'minitest-rails-capybara', '>= 2.1.2'
 end
 
